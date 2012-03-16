@@ -1,0 +1,75 @@
+{
+   "abstract" : "command line pastebin",
+   "author" : [
+      "Mike Doherty <doherty@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.113640",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WWW-Hashbang-Pastebin",
+   "no_index" : {
+      "directory" : [
+         "corpus"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30",
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DBIx::Class::Core" : 0,
+            "DBIx::Class::Schema" : 0,
+            "Dancer" : 0,
+            "Dancer::Plugin::DBIC" : 0,
+            "DateTime" : 0,
+            "DateTime::Format::MySQL" : 0,
+            "DateTime::Format::SQLite" : 0,
+            "Integer::Tiny" : 0,
+            "Plack" : 0,
+            "Starman" : 0,
+            "Try::Tiny" : 0,
+            "base" : 0,
+            "perl" : "5.014000",
+            "strict" : 0,
+            "warnings" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Dancer::Test" : 0,
+            "File::Copy" : 0,
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/doherty/WWW-Hashbang-Pastebin/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/doherty/WWW-Hashbang-Pastebin.git",
+         "web" : "https://github.com/doherty/WWW-Hashbang-Pastebin"
+      }
+   },
+   "version" : "0.001"
+}
+
