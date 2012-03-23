@@ -2,7 +2,7 @@ NAME
     WWW::Hashbang::Pastebin - command line pastebin
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
         $ (hostname ; uptime) | curl -F 'p=<-' http://p.hashbang.ca
@@ -24,6 +24,9 @@ SEE ALSO
     *   <http://p.defau.lt>
 
 AVAILABILITY
+    The project homepage is
+    <http://metacpan.org/release/WWW-Hashbang-Pastebin/>.
+
     The latest version of this module is available from the Comprehensive
     Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
     CPAN site near you, or see

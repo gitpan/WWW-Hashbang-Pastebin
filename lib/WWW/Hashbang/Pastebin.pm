@@ -4,12 +4,13 @@ use warnings;
 use 5.014000;
 use Dancer ':syntax';
 use Dancer::Plugin::DBIC qw(schema);
+use Dancer::Plugin::EscapeHTML qw(escape_html);
 use Integer::Tiny;
 use Try::Tiny;
 use DateTime;
 
 # ABSTRACT: command line pastebin
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 
 
 my $mapper = do {
@@ -32,7 +33,7 @@ post '/' => sub {
         return 'No paste content received';
     }
 
-    my $now = DateTime->now;
+    my $now = DateTime->now( time_zone => 'UTC' );
     my $row = schema->resultset('Paste')->create({
         paste_content => $paste_content,
         paste_date    => $now,
@@ -97,7 +98,7 @@ WWW::Hashbang::Pastebin - command line pastebin
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -129,6 +130,8 @@ __END__
 =back
 
 =head1 AVAILABILITY
+
+The project homepage is L<http://metacpan.org/release/WWW-Hashbang-Pastebin/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN

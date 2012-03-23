@@ -2,7 +2,7 @@ package WWW::Hashbang::Pastebin::Schema;
 use strict;
 use warnings;
 use base qw(DBIx::Class::Schema);
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 # ABSTRACT: Database schema for WWW::Hashbang::Pastebin
 
 __PACKAGE__->load_namespaces();
@@ -20,9 +20,11 @@ WWW::Hashbang::Pastebin::Schema - Database schema for WWW::Hashbang::Pastebin
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AVAILABILITY
+
+The project homepage is L<http://metacpan.org/release/WWW-Hashbang-Pastebin/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN

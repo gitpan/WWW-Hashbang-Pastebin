@@ -10,7 +10,6 @@ README
 README.mkdn
 bin/app.pl
 config.yml
-db/paste.db
 dist.ini
 environments/development.yml
 environments/production.yml
@@ -25,9 +24,12 @@ public/dispatch.fcgi
 public/favicon.ico
 t/00-compile.t
 t/01_use.t
+t/02_schema.t
 t/create_paste.t
 t/deleted_paste.t
 t/empty_paste.t
+t/escaping.t
+t/etc/schema.pl
 t/index.t
 t/invalid_paste_id.t
 t/known_paste.t

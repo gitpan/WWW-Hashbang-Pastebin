@@ -1,4 +1,10 @@
 Changelog for WWW-Hashbang-Pastebin
 
+0.002     2012-03-22
+ * Add missing YAML dependency
+ * Use Test::DBIx::Class for in-memory SQLite DB
+ * Escaping in templates
+ * Fix off-by-one error in line numbering
+
 0.001     2012-03-16
  * Initial version

@@ -2,7 +2,7 @@ package WWW::Hashbang::Pastebin::Schema::Result::Paste;
 use strict;
 use warnings;
 use base qw/DBIx::Class::Core/;
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 # ABSTRACT: represents a paste in the pastebin
  
 __PACKAGE__->table('paste');
@@ -44,9 +44,11 @@ WWW::Hashbang::Pastebin::Schema::Result::Paste - represents a paste in the paste
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AVAILABILITY
+
+The project homepage is L<http://metacpan.org/release/WWW-Hashbang-Pastebin/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN

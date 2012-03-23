@@ -8,10 +8,10 @@ use Module::Build 0.3601;
 my %module_build_args = (
   "build_requires" => {
     "Dancer::Test" => 0,
-    "File::Copy" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
+    "Test::DBIx::Class" => 0,
     "Test::More" => 0
   },
   "configure_requires" => {
@@ -23,7 +23,7 @@ my %module_build_args = (
     "Mike Doherty <doherty\@cpan.org>"
   ],
   "dist_name" => "WWW-Hashbang-Pastebin",
-  "dist_version" => "0.001",
+  "dist_version" => "0.002",
   "license" => "perl",
   "module_name" => "WWW::Hashbang::Pastebin",
   "recommends" => {},
@@ -33,13 +33,16 @@ my %module_build_args = (
     "DBIx::Class::Schema" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,
+    "Dancer::Plugin::EscapeHTML" => 0,
     "DateTime" => 0,
     "DateTime::Format::MySQL" => 0,
     "DateTime::Format::SQLite" => 0,
     "Integer::Tiny" => 0,
     "Plack" => 0,
+    "SQL::Translator" => "0.11006",
     "Starman" => 0,
     "Try::Tiny" => 0,
+    "YAML" => 0,
     "base" => 0,
     "perl" => "5.014000",
     "strict" => 0,

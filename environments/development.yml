@@ -15,8 +15,10 @@ show_errors: 1
 plugins:
     DBIC:
         default:
-            dsn: dbi:SQLite:db/paste.db
+            dsn: dbi:SQLite:dbname=:memory:
             schema_class: WWW::Hashbang::Pastebin::Schema
+    EscapeHTML:
+        automatic_escaping: 1
 
 # engines:
     # xslate:

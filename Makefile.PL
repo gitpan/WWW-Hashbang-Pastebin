@@ -13,10 +13,10 @@ my %WriteMakefileArgs = (
   "AUTHOR" => "Mike Doherty <doherty\@cpan.org>",
   "BUILD_REQUIRES" => {
     "Dancer::Test" => 0,
-    "File::Copy" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
+    "Test::DBIx::Class" => 0,
     "Test::More" => 0
   },
   "CONFIGURE_REQUIRES" => {
@@ -34,18 +34,21 @@ my %WriteMakefileArgs = (
     "DBIx::Class::Schema" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,
+    "Dancer::Plugin::EscapeHTML" => 0,
     "DateTime" => 0,
     "DateTime::Format::MySQL" => 0,
     "DateTime::Format::SQLite" => 0,
     "Integer::Tiny" => 0,
     "Plack" => 0,
+    "SQL::Translator" => "0.11006",
     "Starman" => 0,
     "Try::Tiny" => 0,
+    "YAML" => 0,
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

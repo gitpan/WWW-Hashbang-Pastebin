@@ -1,11 +1,15 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-use Dancer;
+use Dancer qw(:script);
 use WWW::Hashbang::Pastebin;
-our $VERSION = '0.001'; # VERSION
+
+our $VERSION = '0.002'; # VERSION
 # PODNAME: app.pl
 # ABSTRACT: runner for WWW::Hashbang::Pastebin
+
+WWW::Hashbang::Pastebin::schema->deploy
+    unless $ENV{PLACK_ENV};
 
 dance;
 
@@ -20,9 +24,11 @@ app.pl - runner for WWW::Hashbang::Pastebin
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AVAILABILITY
+
+The project homepage is L<http://metacpan.org/release/WWW-Hashbang-Pastebin/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
