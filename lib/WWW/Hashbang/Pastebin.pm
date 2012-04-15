@@ -10,7 +10,7 @@ use Try::Tiny;
 use DateTime;
 
 # ABSTRACT: command line pastebin
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 
 
 my $mapper = do {
@@ -102,7 +102,7 @@ WWW::Hashbang::Pastebin - command line pastebin
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

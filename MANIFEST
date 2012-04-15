@@ -9,6 +9,7 @@ Makefile.PL
 README
 README.mkdn
 bin/app.pl
+bin/pastebin
 config.yml
 dist.ini
 environments/development.yml

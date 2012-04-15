@@ -4,12 +4,9 @@ use warnings;
 use Dancer qw(:script);
 use WWW::Hashbang::Pastebin;
 
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 # PODNAME: app.pl
 # ABSTRACT: runner for WWW::Hashbang::Pastebin
-
-WWW::Hashbang::Pastebin::schema->deploy
-    unless $ENV{PLACK_ENV};
 
 dance;
 
@@ -24,7 +21,7 @@ app.pl - runner for WWW::Hashbang::Pastebin
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AVAILABILITY
 

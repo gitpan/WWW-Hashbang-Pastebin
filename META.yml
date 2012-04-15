@@ -25,6 +25,7 @@ no_index:
 requires:
   DBIx::Class::Core: 0
   DBIx::Class::Schema: 0
+  Daemon::Control: 0
   Dancer: 0
   Dancer::Plugin::DBIC: 0
   Dancer::Plugin::EscapeHTML: 0
@@ -46,4 +47,4 @@ resources:
   bugtracker: https://github.com/doherty/WWW-Hashbang-Pastebin/issues
   homepage: http://metacpan.org/release/WWW-Hashbang-Pastebin/
   repository: git://github.com/doherty/WWW-Hashbang-Pastebin.git
-version: 0.003
+version: 0.004

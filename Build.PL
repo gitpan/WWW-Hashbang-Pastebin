@@ -23,7 +23,7 @@ my %module_build_args = (
     "Mike Doherty <doherty\@cpan.org>"
   ],
   "dist_name" => "WWW-Hashbang-Pastebin",
-  "dist_version" => "0.003",
+  "dist_version" => "0.004",
   "license" => "perl",
   "module_name" => "WWW::Hashbang::Pastebin",
   "recommends" => {},
@@ -31,6 +31,7 @@ my %module_build_args = (
   "requires" => {
     "DBIx::Class::Core" => 0,
     "DBIx::Class::Schema" => 0,
+    "Daemon::Control" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,
     "Dancer::Plugin::EscapeHTML" => 0,
@@ -50,7 +51,8 @@ my %module_build_args = (
     "warnings" => 0
   },
   "script_files" => [
-    "bin/app.pl"
+    "bin/app.pl",
+    "bin/pastebin"
   ]
 );
 

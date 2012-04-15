@@ -2,7 +2,7 @@ package WWW::Hashbang::Pastebin::Schema;
 use strict;
 use warnings;
 use base qw(DBIx::Class::Schema);
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 # ABSTRACT: Database schema for WWW::Hashbang::Pastebin
 
 __PACKAGE__->load_namespaces();
@@ -20,7 +20,7 @@ WWW::Hashbang::Pastebin::Schema - Database schema for WWW::Hashbang::Pastebin
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AVAILABILITY
 

@@ -2,7 +2,7 @@ package WWW::Hashbang::Pastebin::Schema::Result::Paste;
 use strict;
 use warnings;
 use base qw/DBIx::Class::Core/;
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 # ABSTRACT: represents a paste in the pastebin
  
 __PACKAGE__->table('paste');
@@ -44,7 +44,7 @@ WWW::Hashbang::Pastebin::Schema::Result::Paste - represents a paste in the paste
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AVAILABILITY
 

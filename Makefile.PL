@@ -25,13 +25,15 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "WWW-Hashbang-Pastebin",
   "EXE_FILES" => [
-    "bin/app.pl"
+    "bin/app.pl",
+    "bin/pastebin"
   ],
   "LICENSE" => "perl",
   "NAME" => "WWW::Hashbang::Pastebin",
   "PREREQ_PM" => {
     "DBIx::Class::Core" => 0,
     "DBIx::Class::Schema" => 0,
+    "Daemon::Control" => 0,
     "Dancer" => 0,
     "Dancer::Plugin::DBIC" => 0,
     "Dancer::Plugin::EscapeHTML" => 0,
@@ -49,7 +51,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }
